@@ -3824,7 +3824,7 @@ class Leveler(commands.Cog):
                 continue
             await asyncio.sleep(0)
             # _handle_levelup requires a Member
-            user = ctx.guild.get_member(int(userdata["id"]))
+            user = ctx.guild.get_member(int(userdata["user_id"]))
 
             if not user:
                 failed += 1
