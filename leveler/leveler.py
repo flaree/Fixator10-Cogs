@@ -3817,7 +3817,7 @@ class Leveler(commands.Cog):
             if r.status == 200:
                 data = await r.json()
             else:
-                return await ctx.send("No data was found within the Mee6 API.")
+                return await ctx.send("No data was found within the Tastumaki API.")
 
         for userdata in data:
             if userdata is None:
